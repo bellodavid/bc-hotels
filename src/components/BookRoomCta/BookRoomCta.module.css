@@ -1,0 +1,266 @@
+/* BookRoomCta.module.css */
+
+.bookRoomCta {
+  font-family: Arial, sans-serif;
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f8f9fa;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.priceDisplay {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.discountedPrice {
+  text-decoration: line-through;
+  color: #6c757d;
+}
+
+.discountInfo {
+  font-size: 1.2rem;
+}
+
+.finalPrice {
+  color: #28a745;
+}
+
+.divider {
+  border-bottom: 2px solid #dee2e6;
+  margin: 15px 0;
+}
+
+.specialNote {
+  font-style: italic;
+  color: #6c757d;
+  margin-bottom: 15px;
+}
+
+.datePickerContainer,
+.guestInputContainer {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px;
+}
+
+.datePicker,
+.guestInput {
+  width: 48%;
+}
+
+.datePicker input,
+.guestInput input {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ced4da;
+  border-radius: 4px;
+}
+
+.totalPrice {
+  font-weight: bold;
+  margin-top: 15px;
+}
+
+.bookNowButton {
+  width: 100%;
+  padding: 10px;
+  background-color: #489187;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.bookNowButton:hover {
+  background-color: #489187;
+}
+
+.bookNowButton:disabled {
+  background-color: #6c757d;
+  cursor: not-allowed;
+}
+
+/* Modal styles */
+.modalOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modalContent {
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  max-width: 500px;
+  width: 90%;
+  max-height: 90vh;
+  overflow-y: auto;
+  position: relative;
+}
+
+.closeModal {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 24px;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.modalTitle {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+}
+
+.checkoutStep {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.roomDetails {
+  background-color: #f8f9fa;
+  border-radius: 4px;
+  padding: 10px;
+  margin-bottom: 15px;
+}
+
+.roomDetailsHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.roomDetailsTitle {
+  font-weight: bold;
+}
+
+.roomDetailsIcon {
+  font-size: 1.2rem;
+}
+
+.inputGroup {
+  display: flex;
+  flex-direction: column;
+}
+
+.inputGroup label {
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.inputGroup input {
+  padding: 8px;
+  border: 1px solid #ced4da;
+  border-radius: 4px;
+}
+
+.nextButton,
+.copyLinkButton,
+.toggleQrButton {
+  padding: 10px;
+  background-color: #489187;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.nextButton:hover,
+.copyLinkButton:hover,
+.toggleQrButton:hover {
+  background-color: #489187;
+}
+
+.arrowIcon {
+  margin-left: 5px;
+}
+
+.amountDisplay {
+  text-align: center;
+}
+
+.amountInput {
+  font-size: 1.2rem;
+  text-align: center;
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ced4da;
+  border-radius: 4px;
+}
+
+.timeRemaining {
+  text-align: center;
+  margin: 15px 0;
+}
+
+.timeRemainingTitle {
+  font-weight: bold;
+  color: #6c757d;
+}
+
+.timeRemainingValue {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #489187;
+}
+
+.walletAddressContainer {
+  display: flex;
+}
+
+.walletAddressContainer input {
+  flex-grow: 1;
+  margin-right: 10px;
+}
+
+.copyButton {
+  padding: 5px 10px;
+  background-color: #6c757d;
+  color: white;
+  border: none;
+}
+.paymentConfirmButton {
+  width: 100%;
+  padding: 12px;
+  background-color: #489187;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.paymentConfirmButton:disabled {
+  background-color: #6c757d;
+  cursor: not-allowed;
+}
+
+.paymentStatus {
+  margin-top: 10px;
+  padding: 10px;
+  background-color: #f8f9fa;
+  border: 1px solid #489187;
+  border-radius: 5px;
+  text-align: center;
+  font-weight: bold;
+  color: #489187;
+}
